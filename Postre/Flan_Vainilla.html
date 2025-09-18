@@ -1,82 +1,99 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-   <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Flan Vainilla</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Flan de Vainilla</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-<header class="site-header">
+  <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="../index.html" aria-label="Ir a la portada">
-        <img src="../Img/logo.png" alt="Logo FogonIngeniero" class="brand__img">
+        <img src="../img/logo.png" alt="Logo FogonIngeniero" class="brand__img">
+        <span class="brand__title">El Fogón Ingeniero</span>
       </a>
 
-    <nav class="main-nav" aria-label="Menú principal">
-        <a href="../index.html" class="nav-link">Inicio</a>
-        <a href="../Carnes/Bistec.html" class="nav-link">Carne</a>
-        <a href="../Pollos/Pollo_Horno.html" class="nav-link">Pollo</a>
-        <a href="../Pescados/Filete_Pescado.html" class="nav-link">Pescado</a>
-        <a href="../Postre/Flan_Vainilla.html" class="nav-link">Postres</a>
-      </nav>
-      <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+      <form class="search-form" role="search">
+        <input type="text" class="search-input" placeholder="Buscar recetas..." />
+        <button type="submit" class="search-btn">🔍</button>
+      </form>
+
+      <div class="dropdown">
+        <button class="dropbtn">Categorías 🔽</button>
+        <div class="dropdown-content">
+          <a href="../Carnes/Bistec.html">🥩 Carne</a>
+          <a href="../Pollos/Pollo_Horno.html">🍗 Pollo</a>
+          <a href="../Pescados/Filete_Pescado.html">🐟 Pescado</a>
+          <a href="../Postre/Flan_Vainilla.html">🍰 Postres</a>
+        </div>
+      </div>
     </div>
-    </header>
-    <main class="container recipe-page">
+  </header>
+
+  <div id="search-message" class="search-message"></div>
+
+  <main class="container recipe-page">
     <article class="recipe">
       <header class="recipe-header">
         <h1>Flan Casero de Vainilla</h1>
-        <p class="meta">Tiempo: 20 min (+ Enfriado)• Raciones: 4</p>
-        <img src="../Img/Img_4.jpeg" alt="Flan Vainilla" class="recipe-hero">
+        <p class="meta">Tiempo: 20 min (+ enfriado) • Raciones: 4</p>
+        <img src="../img/Img_4.jpeg" alt="Flan de Vainilla" class="recipe-hero">
+      </header>
 
-
-        <section class="recipe-intro">
+      <section class="recipe-intro">
         <p>Postre aterciopelado, ligero y rápido de preparar. Ideal para terminar una cena con un toque elegante.</p>
       </section>
 
-        <section class="recipe-ingredients">
-            <h2> Ingredientes:</h2>
-        <ul class="ingredients-list" id="ing-postre">
-        <li> 4 Huevos</li>
-        <li> 1 Lata leche condensada (395 g)</li>
-        <li> 1 Lata crema de leche (360 ml)   </li>
-        <li> 1 Cucharadita de esencia de vainilla </li>
-        <li> 1 GTaza de azucar</li>
-     </ul>
-     <section class="recipe-steps"></section>
-     <h2> Preparación:</h2>
-     <ol>
-        <li>Preparar el caramelo</li>
-        <ul>
-            <li>Colocar la taza de azúcar en una sartén a fuego medio.</li>
-            <li>Calentar hasta que se derrita y tome un color dorado (sin quemarse)</li>
-            <li>Verter el caramelo en un molde para flan y cubrir el fondo.</li>
+      <section id="ingredientes" class="recipe-ingredients">
+        <h2>Ingredientes</h2>
+        <ul class="ingredients-list">
+          <li>4 huevos</li>
+          <li>1 lata de leche condensada (395 g)</li>
+          <li>1 lata de crema de leche (360 ml)</li>
+          <li>1 cucharadita de esencia de vainilla</li>
+          <li>1 taza de azúcar</li>
         </ul>
-        <li>Mezclar los ingredientes</li>
-        <ul>
-            <li>En una licuadora, agregar los huevos, la leche condensada, la crema de leche y la vainilla.</li>
-            <li>Batir hasta obtener una mezcla homogénea.</li>
-        </ul>
-        <li>Hornear a baño Maria</li>
-        <ul>
-            <li>Verter la mezcla en el molde con caramelo.</li>
-            <li>Colocar el molde dentro de una bandeja con agua caliente (baño María)</li>
-            <li>Hornear a 180 °C durante 45 minutos o hasta que al insertar un palillo salga limpio.</li>
-        </ul>
-        <li>Enfriar y desmoldar</li>
-        <ul>
-            <li>Dejar enfriar a temperatura ambiente y luego refrigerar por 2 horas.</li>
-            <li>Pasar un cuchillo por los bordes y desmoldar con cuidado.</li>
-        </ul>
-        <li>Servir</li>
-        <ul><li>Decorar con un poco de caramelo líquido o frutas frescas al gusto.</li></ul>
-             
-     </ol>
-        </section>
+      </section>
+
+      <section id="preparacion" class="recipe-steps">
+        <h2>Preparación</h2>
+        <ol>
+          <li>Preparar el caramelo</li>
+          <ul>
+            <li>Coloca el azúcar en una sartén a fuego medio.</li>
+            <li>Deja que tome color dorado (sin quemar) y vierte en el molde.</li>
+          </ul>
+
+          <li>Mezclar ingredientes</li>
+          <ul>
+            <li>Licúa huevos, leche condensada, crema de leche y vainilla.</li>
+            <li>Procesa hasta obtener una mezcla homogénea.</li>
+          </ul>
+
+          <li>Hornear a baño María</li>
+          <ul>
+            <li>Vierte la mezcla en el molde con caramelo.</li>
+            <li>Coloca el molde dentro de una bandeja con agua caliente.</li>
+            <li>Hornea a 180&nbsp;°C durante 45 min o hasta palillo seco.</li>
+          </ul>
+
+          <li>Enfriar y desmoldar</li>
+          <ul>
+            <li>Deja enfriar y refrigera 2 h.</li>
+            <li>Pasa un cuchillo por los bordes y desmolda.</li>
+          </ul>
+
+          <li>Servir</li>
+          <ul>
+            <li>Decora con caramelo líquido o frutas frescas.</li>
+          </ul>
+        </ol>
+      </section>
     </article>
   </main>
+
   <footer class="site-footer">
     <div class="container footer-inner">
       <p>© <span id="year"></span> El Fogón Ingeniero — Planos y Platos: Cocina en Construcción.</p>
@@ -84,6 +101,6 @@
     </div>
   </footer>
 
-  <script src="../script.js"></script>   
-  </body>
+  <script src="../script.js"></script>
+</body>
 </html>

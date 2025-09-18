@@ -10,99 +10,98 @@
 
   <!-- CSS global -->
   <link rel="stylesheet" href="style.css">
-
-  <!-- Leaflet CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
-
 </head>
 <body> 
-<header class="site-header">
-  <div class="container header-inner">
-    
-    <!-- Logo + nombre -->
-    <a class="brand" href="index.html" aria-label="Ir a la portada">
-      <img src="img/logo.png" alt="Logo FogonIngeniero" class="brand__img">
-      <span class="brand__title">El Fogón Ingeniero</span>
-    </a>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <!-- Logo + nombre -->
+      <a class="brand" href="index.html" aria-label="Ir a la portada">
+        <img src="img/logo.png" alt="Logo FogonIngeniero" class="brand__img">
+        <span class="brand__title">El Fogón Ingeniero</span>
+      </a>
 
-    <!-- Buscador -->
-    <form class="search-form" role="search">
-      <input type="text" class="search-input" placeholder="¿Qué estás buscando?">
-      <button type="submit" class="search-btn">🔍</button>
-    </form>
+      <!-- Buscador -->
+      <form class="search-form" role="search">
+        <input type="text" class="search-input" placeholder="¿Qué estás buscando?">
+        <button type="submit" class="search-btn">🔍</button>
+      </form>
 
-        <!-- Menú desplegable -->
-    <div class="dropdown">
-      <button class="dropbtn">Categorías 🔽</button>
-      <div class="dropdown-content">
-        <a href="Carnes/Bistec.html" >🥩 Carne</a>
-        <a href="Pollos/Pollo_Horno.html">🍗 Pollo</a>
-        <a href="Pescados/Filete_Pescado.html" >🐟 Pescado</a>
-        <a href="Postre/Flan_Vainilla.html">🍰 Postres</a>
-     </div>
+      <!-- Menú desplegable -->
+      <div class="dropdown">
+        <button class="dropbtn">Categorías 🔽</button>
+        <div class="dropdown-content">
+          <a href="Carnes/Bistec.html">🥩 Carne</a>
+          <a href="Pollos/Pollo_Horno.html">🍗 Pollo</a>
+          <a href="Pescados/Filete_Pescado.html">🐟 Pescado</a>
+          <a href="Postre/Flan_Vainilla.html">🍰 Postres</a>
+        </div>
+      </div>
     </div>
-    </div>
-    </header>
-<!-- Mensaje de búsqueda -->
-<div id="search-message"></div>
+  </header>
+
+  <!-- Mensaje de búsqueda -->
+  <div id="search-message" class="search-message"></div>
 
   <main>
+    <!-- Hero -->
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-content">
-          <!-- Aquí reforzamos la identidad -->
+          <!-- Identidad -->
           <h1 class="site-title">El Fogón Ingeniero</h1>
           <p class="site-slogan">Planos y Platos: Recetas en Construcción</p>
           <p class="hero-sub">
             Cocinar nunca fue tan fácil: recetas rápidas, sabrosas y al alcance de todos.
             Explora carne, pollo, pescado o postres y ponle chispa a tu cocina 🔥👷
           </p>
-        <div class="hero-ctas"></div>
+
+          <!-- CTAs -->
+          <div class="hero-ctas">
             <a href="Carnes/Bistec.html" class="btn btn-primary">Receta Bistec Encebollado</a>
             <a href="Pollos/Pollo_Horno.html" class="btn btn-outline">Receta Pollo al Horno</a>
             <a href="Pescados/Filete_Pescado.html" class="btn btn-outline">Receta Filete Pescado</a>
             <a href="Postre/Flan_Vainilla.html" class="btn btn-accent">Receta Flan Vainilla</a>
-           </div>
+          </div>
         </div>
-<!-- Slider -->       
-      <figure class="hero-slider" aria-label="Menú de categorías destacadas">
-      <div class="slider-container">
 
-    <a href="Carnes/Bistec.html" class="slide">
-      <img src="img/Img_1.jpeg" alt="Recetas de carne" class="slide-img">
-      <figcaption class="hero-caption">🥩 Carne: recetas jugosas</figcaption>
-    </a>
+        <!-- Slider -->
+        <figure class="hero-slider" aria-label="Menú de categorías destacadas">
+          <div class="slider-container slides">
+            <a href="Carnes/Bistec.html" class="slide">
+              <img src="img/Img_1.jpeg" alt="Recetas de carne" class="slide-img">
+              <figcaption class="hero-caption">🥩 Carne: recetas jugosas</figcaption>
+            </a>
 
-    <a href="Pollos/Pollo_Horno.html" class="slide">
-      <img src="img/Img_2.jpeg" alt="Recetas de pollo" class="slide-img">
-      <figcaption class="hero-caption">🍗 Pollo: sabroso y versátil</figcaption>
-    </a>
+            <a href="Pollos/Pollo_Horno.html" class="slide">
+              <img src="img/Img_2.jpeg" alt="Recetas de pollo" class="slide-img">
+              <figcaption class="hero-caption">🍗 Pollo: sabroso y versátil</figcaption>
+            </a>
 
-    <a href="Pescados/Filete_Pescado.html" class="slide">
-      <img src="img/Img_3.jpeg" alt="Recetas de pescado" class="slide-img">
-      <figcaption class="hero-caption">🐟 Pescado: fresco y saludable</figcaption>
-    </a>
+            <a href="Pescados/Filete_Pescado.html" class="slide">
+              <img src="img/Img_3.jpeg" alt="Recetas de pescado" class="slide-img">
+              <figcaption class="hero-caption">🐟 Pescado: fresco y saludable</figcaption>
+            </a>
 
-    <a href="Postre/Flan_Vainilla.html" class="slide">
-      <img src="img/Img_4.jpeg" alt="Recetas de postres" class="slide-img">
-      <figcaption class="hero-caption">🍰 Postres: dulces tentaciones</figcaption>
-    </a>
+            <a href="Postre/Flan_Vainilla.html" class="slide">
+              <img src="img/Img_4.jpeg" alt="Recetas de postres" class="slide-img">
+              <figcaption class="hero-caption">🍰 Postres: dulces tentaciones</figcaption>
+            </a>
+          </div>
 
-  </div>
-  
-
-  <button class="slider-btn prev" aria-label="Anterior">❮</button>
-  <button class="slider-btn next" aria-label="Siguiente">❯</button>
-</figure>
-  </div>
+          <button class="slider-btn prev" aria-label="Anterior">❮</button>
+          <button class="slider-btn next" aria-label="Siguiente">❯</button>
+        </figure>
+      </div>
     </section>
 
+    <!-- Cards -->
     <section class="container cards-section">
       <h2 class="section-title">Categorías rápidas</h2>
       <p class="section-sub">Elige una receta y sigue pasos claros, ingredientes sencillos y fotos para guiarte.</p>
 
       <div class="cards-grid">
-        <!--Carne -->
+        <!-- Carne -->
         <article class="card">
           <img src="img/Img_1.jpeg" alt="Bistec Encebollado" class="card-img">
           <div class="card-body">
@@ -112,7 +111,7 @@
           </div>
         </article>
 
-        <!--Pollo -->
+        <!-- Pollo -->
         <article class="card">
           <img src="img/Img_2.jpeg" alt="Pollo al Horno" class="card-img">
           <div class="card-body">
@@ -122,9 +121,9 @@
           </div>
         </article>
 
-        <!-- Card: Pescado -->
+        <!-- Pescado -->
         <article class="card">
-          <img src="Img/Img_3.jpeg" alt="Filete Pescado" class="card-img">
+          <img src="img/Img_3.jpeg" alt="Filete Pescado" class="card-img">
           <div class="card-body">
             <h3 class="card-title">Filete Pescado</h3>
             <p class="card-text">Pescado suave, limón y hierbas — listo en menos de 25 minutos.</p>
@@ -132,9 +131,9 @@
           </div>
         </article>
 
-        <!-- Card: Postre -->
+        <!-- Postre -->
         <article class="card">
-          <img src="Img/Img_4.jpeg" alt="Postre" class="card-img">
+          <img src="img/Img_4.jpeg" alt="Postre" class="card-img">
           <div class="card-body">
             <h3 class="card-title">Flan Vainilla</h3>
             <p class="card-text">Ligero, cremoso y fácil de preparar — el final perfecto para cualquier comida.</p>
@@ -145,6 +144,7 @@
     </section>
   </main>
 
+  <!-- Footer -->
   <footer class="site-footer">
     <div class="container footer-inner">
       <p>© <span id="year"></span> El Fogón Ingeniero — Planos y Platos: Cocina en Construcción.</p>
@@ -152,7 +152,7 @@
     </div>
   </footer>
 
+  <!-- JS -->
   <script src="script.js"></script>
-
 </body>
 </html>

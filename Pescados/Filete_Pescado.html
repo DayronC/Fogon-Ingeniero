@@ -1,81 +1,99 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-   <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Filete_Pescado</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Filete de Pescado</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-    <header class="site-header">
+  <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="../index.html" aria-label="Ir a la portada">
-        <img src="../Img/logo.png" alt="Logo FogonIngeniero" class="brand__img">
+        <img src="../img/logo.png" alt="Logo FogonIngeniero" class="brand__img">
+        <span class="brand__title">El Fogón Ingeniero</span>
       </a>
 
-    <nav class="main-nav" aria-label="Menú principal">
-        <a href="../index.html" class="nav-link">Inicio</a>
-        <a href="../Carnes/Bistec.html" class="nav-link">Carne</a>
-        <a href="../Pollos/Pollo_Horno.html" class="nav-link">Pollo</a>
-        <a href="../Pescados/Filete_Pescado.html" class="nav-link">Pescado</a>
-        <a href="../Postre/Flan_Vainilla.html" class="nav-link">Postres</a>
-      </nav>
-      <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+      <form class="search-form" role="search">
+        <input type="text" class="search-input" placeholder="Buscar recetas..." />
+        <button type="submit" class="search-btn">🔍</button>
+      </form>
+
+      <div class="dropdown">
+        <button class="dropbtn">Categorías 🔽</button>
+        <div class="dropdown-content">
+          <a href="../Carnes/Bistec.html">🥩 Carne</a>
+          <a href="../Pollos/Pollo_Horno.html">🍗 Pollo</a>
+          <a href="../Pescados/Filete_Pescado.html">🐟 Pescado</a>
+          <a href="../Postre/Flan_Vainilla.html">🍰 Postres</a>
+        </div>
+      </div>
     </div>
-    </header>
-    <main class="container recipe-page">
+  </header>
+
+  <div id="search-message" class="search-message"></div>
+
+  <main class="container recipe-page">
     <article class="recipe">
       <header class="recipe-header">
-        <h1>Filete Pescado</h1>
+        <h1>Filete de Pescado</h1>
         <p class="meta">Tiempo: 25 min • Raciones: 2</p>
-        <img src="../Img/Img_3.jpeg" alt="Filete Pescado" class="recipe-hero">
+        <img src="../img/Img_3.jpeg" alt="Filete de Pescado" class="recipe-hero">
+      </header>
 
-
-        <section class="recipe-intro">
+      <section class="recipe-intro">
         <p>Un filete suave y jugoso, sazonado con limón y eneldo — rápido, ligero y delicioso.</p>
       </section>
 
-        <section class="recipe-ingredients">
-            <h2> Ingredientes:</h2>
-        <ul class="ingredients-list" id="ing-pescado">
-        <li> 2 Filetes de pescado blanco (Merluza o Tilapia)</li>
-        <li> 2 Cucharadas de mantequilla</li>
-        <li> 2 Dientes de ajo picados    </li>
-        <li> 1 Cucharadita de perejil fresco picado </li>
-        <li> 1 Limón</li>
-        <li> Sal y Pimienta al gusto</li>
-     </ul>
-    <section class="recipe-steps">
+      <section id="ingredientes" class="recipe-ingredients">
+        <h2>Ingredientes</h2>
+        <ul class="ingredients-list">
+          <li>2 filetes de pescado blanco (merluza o tilapia)</li>
+          <li>2 cucharadas de mantequilla</li>
+          <li>2 dientes de ajo picados</li>
+          <li>1 cucharadita de perejil fresco picado</li>
+          <li>1 limón</li>
+          <li>Sal y pimienta al gusto</li>
+        </ul>
+      </section>
+
+      <section id="preparacion" class="recipe-steps">
         <h2>Preparación</h2>
-     <ol>
-        <li>Preparar el pescado</li>
-        <ul>
-            <li>Lavar y secar los filetes con papel absorbente.</li>
-            <li>Sazonar con sal y pimienta al gusto.</li>
-        </ul>
-        <li>Derretir la mantequilla</li>
-        <ul>
-            <li>En una sartén grande, derretir la mantequilla a fuego medio.</li>
-            <li>Agregar el ajo picado y sofreír 1 minuto hasta que suelte aroma.</li>
-        </ul>
-        <li>Cocinar el pescado</li>
-        <ul>
-            <li>Colocar los filetes en el sarten</li>
-            <li>Cocinar 3–4 minutos por cada lado, hasta que estén dorados y cocidos.</li>
-        </ul>
-        <li>Añadir el limon</li>
-        <ul>
-            <li>Exprimir el jugo de limón sobre el pescado mientras aún está caliente.</li>
-            <li>Espolvorear perejil fresco por encima</li>
-        </ul>
-        <li>Servir caliente</li>
-        <ul><li>Acompañar con arroz blanco, ensalada o papas al vapor.</li></ul>
-             
-     </ol>
-     </section>
+        <ol>
+          <li>Preparar el pescado</li>
+          <ul>
+            <li>Lava y seca los filetes con papel absorbente.</li>
+            <li>Sazona con sal y pimienta.</li>
+          </ul>
+
+          <li>Derretir la mantequilla</li>
+          <ul>
+            <li>En una sartén grande, derrite la mantequilla a fuego medio.</li>
+            <li>Agrega el ajo picado y sofríe 1 minuto.</li>
+          </ul>
+
+          <li>Cocinar el pescado</li>
+          <ul>
+            <li>Coloca los filetes en la sartén.</li>
+            <li>Cocina 3–4 minutos por lado hasta dorar.</li>
+          </ul>
+
+          <li>Añadir limón</li>
+          <ul>
+            <li>Exprime el jugo de limón sobre el pescado caliente.</li>
+            <li>Espolvorea perejil por encima.</li>
+          </ul>
+
+          <li>Servir</li>
+          <ul>
+            <li>Acompaña con arroz blanco, ensalada o papas al vapor.</li>
+          </ul>
+        </ol>
+      </section>
     </article>
   </main>
+
   <footer class="site-footer">
     <div class="container footer-inner">
       <p>© <span id="year"></span> El Fogón Ingeniero — Planos y Platos: Cocina en Construcción.</p>
@@ -83,6 +101,6 @@
     </div>
   </footer>
 
-  <script src="../script.js"></script> 
+  <script src="../script.js"></script>
 </body>
 </html>

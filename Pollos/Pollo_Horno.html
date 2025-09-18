@@ -1,74 +1,94 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Pollo_Horno</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pollo al Horno</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-
-    <header class="site-header">
+  <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="../index.html" aria-label="Ir a la portada">
-        <img src="../Img/logo.png" alt="Logo FogonIngeniero" class="brand__img">
+        <img src="../img/logo.png" alt="Logo FogonIngeniero" class="brand__img">
+        <span class="brand__title">El Fogón Ingeniero</span>
       </a>
 
-    <nav class="main-nav" aria-label="Menú principal">
-        <a href="../index.html" class="nav-link">Inicio</a>
-        <a href="../Carnes/Bistec.html" class="nav-link">Carne</a>
-        <a href="../Pollos/Pollo_Horno.html" class="nav-link">Pollo</a>
-        <a href="../Pescados/Filete_Pescado.html" class="nav-link">Pescado</a>
-        <a href="../Postre/Flan_Vainilla.html" class="nav-link">Postres</a>
-      </nav>
-      <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+      <form class="search-form" role="search">
+        <input type="text" class="search-input" placeholder="Buscar recetas..." />
+        <button type="submit" class="search-btn">🔍</button>
+      </form>
+
+      <div class="dropdown">
+        <button class="dropbtn">Categorías 🔽</button>
+        <div class="dropdown-content">
+          <a href="../Carnes/Bistec.html">🥩 Carne</a>
+          <a href="../Pollos/Pollo_Horno.html">🍗 Pollo</a>
+          <a href="../Pescados/Filete_Pescado.html">🐟 Pescado</a>
+          <a href="../Postre/Flan_Vainilla.html">🍰 Postres</a>
+        </div>
+      </div>
     </div>
-    </header>
-    <main class="container recipe-page">
+  </header>
+
+  <div id="search-message" class="search-message"></div>
+
+  <main class="container recipe-page">
     <article class="recipe">
       <header class="recipe-header">
         <h1>Pollo Horneado</h1>
         <p class="meta">Tiempo: 45 min • Raciones: 4</p>
-        <img src="../Img/Img_2.jpeg" alt="Pollo Horno" class="recipe-hero">
+        <img src="../img/Img_2.jpeg" alt="Pollo al Horno" class="recipe-hero">
+      </header>
 
-
-        <section class="recipe-intro">
+      <section class="recipe-intro">
         <p>Pollo jugoso con piel dorada y un toque ácido que equilibra muy bien las hierbas aromáticas.</p>
       </section>
 
-        <section class="recipe-ingredients">
-            <h2> Ingredientes:</h2>
-    <ul class="ingredients-list" id="ing-pollo">
-        <li> 4 Piezas de pollo (Muslos o Pechugas) </li>
-        <li> 2 Cucharadas de aceite de oliva </li>
-        <li> 2 Dientes de ajo picados    </li>
-        <li> 1 Cucharadita de paprika </li>
-        <li> 1 Cucharada de oregano seco</li>
-        <li> 1 Limón</li>
-        <li> Sal y Pimienta al gusto</li>
-     </ul>
-    <section class="recipe-steps">
+      <section id="ingredientes" class="recipe-ingredients">
+        <h2>Ingredientes</h2>
+        <ul class="ingredients-list">
+          <li>4 piezas de pollo (muslos o pechugas)</li>
+          <li>2 cucharadas de aceite de oliva</li>
+          <li>2 dientes de ajo picados</li>
+          <li>1 cucharadita de paprika</li>
+          <li>1 cucharada de orégano seco</li>
+          <li>1 limón</li>
+          <li>Sal y pimienta al gusto</li>
+        </ul>
+      </section>
+
+      <section id="preparacion" class="recipe-steps">
         <h2>Preparación</h2>
-     <ol>
-        <li> Preparar el pollo </li>
-            <ul> <li>Lavar las piezas de pollo y secarlas con papel absorbente</li></ul>
-            <ul> <li>Colocarlas en un recipiente hondo. </li></ul> 
-        <li> Marinar</li>
-            <ul><li>Agregar aceite de oliva, ajo picado, paprika, orégano, jugo de limón, sal y pimienta.</li></ul>
-            <ul><li>Mezclar bien para que el pollo quede impregnado de especias.</li></ul>
-            <ul><li>Dejar reposar 5 minutos (opcional: refrigerar 1 hora para más sabor).</li></ul> 
-        <li>Hornear</li>
-            <ul><li>Precalentar el horno a 200 °C.</li></ul>
-            <ul><li>Colocar el pollo en una bandeja para horno.</li></ul>
-            <ul><li>Hornear durante 30–35 minutos, volteando a la mitad para que se dore por ambos lados.</li></ul>
-        <li> Servir</li>
-            <ul><li>Sacar del horno y dejar reposar 3 minutos antes de servir.</li></ul>
-            <ul><li>Acompañar con ensalada fresca, papas al horno o arroz blanco.</li></ul>
-     </ol>
-     </section>
+        <ol>
+          <li>Preparar el pollo</li>
+          <ul>
+            <li>Lava y seca las piezas de pollo.</li>
+            <li>Colócalas en un recipiente hondo.</li>
+          </ul>
+
+          <li>Marinar</li>
+          <ul>
+            <li>Mezcla aceite, ajo, paprika, orégano, jugo de limón, sal y pimienta.</li>
+            <li>Impregna bien el pollo y deja reposar 5 min (opcional: 1 h en nevera).</li>
+          </ul>
+
+          <li>Hornear</li>
+          <ul>
+            <li>Precalienta el horno a 200&nbsp;°C.</li>
+            <li>Coloca el pollo en una bandeja y hornea 30–35 min, volteando a la mitad.</li>
+          </ul>
+
+          <li>Servir</li>
+          <ul>
+            <li>Deja reposar 3 min y sirve con ensalada, papas o arroz blanco.</li>
+          </ul>
+        </ol>
+      </section>
     </article>
   </main>
+
   <footer class="site-footer">
     <div class="container footer-inner">
       <p>© <span id="year"></span> El Fogón Ingeniero — Planos y Platos: Cocina en Construcción.</p>
@@ -77,7 +97,5 @@
   </footer>
 
   <script src="../script.js"></script>
-
 </body>
-
 </html>

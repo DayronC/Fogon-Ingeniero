@@ -1,92 +1,106 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Bistec_Encebollado</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bistec Encebollado</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../style.css">
-
 </head>
 <body>
-    <header class="site-header">
+  <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="../index.html" aria-label="Ir a la portada">
-        <img src="../Img/logo.png" alt="Logo FogonIngeniero" class="brand__img">
+        <img src="../img/logo.png" alt="Logo FogonIngeniero" class="brand__img">
+        <span class="brand__title">El Fogón Ingeniero</span>
       </a>
 
-        <nav class="main-nav" aria-label="Menú principal">
-        <a href="../index.html" class="nav-link">Inicio</a>
-        <a href="../Carnes/Bistec.html" class="nav-link">Carne</a>
-        <a href="../Pollos/Pollo_Horno.html" class="nav-link">Pollo</a>
-        <a href="../Pescados/Filete_Pescado.html" class="nav-link">Pescado</a>
-        <a href="../Postre/Flan_Vainilla.html" class="nav-link">Postres</a>
-      </nav>
-      <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+      <form class="search-form" role="search">
+        <input type="text" class="search-input" placeholder="Buscar recetas..." />
+        <button type="submit" class="search-btn">🔍</button>
+      </form>
+
+      <div class="dropdown">
+        <button class="dropbtn">Categorías 🔽</button>
+        <div class="dropdown-content">
+          <a href="../Carnes/Bistec.html">🥩 Carne</a>
+          <a href="../Pollos/Pollo_Horno.html">🍗 Pollo</a>
+          <a href="../Pescados/Filete_Pescado.html">🐟 Pescado</a>
+          <a href="../Postre/Flan_Vainilla.html">🍰 Postres</a>
+        </div>
+      </div>
     </div>
-    </header>
-    <main class="container recipe-page">
+  </header>
+
+  <div id="search-message" class="search-message"></div>
+
+  <main class="container recipe-page">
     <article class="recipe">
       <header class="recipe-header">
         <h1>Bistec Encebollado</h1>
         <p class="meta">Tiempo: 35 min • Raciones: 2</p>
-        <img src="../Img/Img_1.jpeg" alt="Bistec Encebollado" class="recipe-hero">
+        <img src="../img/Img_1.jpeg" alt="Bistec Encebollado" class="recipe-hero">
+      </header>
 
-        <section class="recipe-intro">
+      <section class="recipe-intro">
         <p>Una receta clásica de bistec, fácil de seguir. Usamos una mantequilla de hierbas rápida para potenciar el sabor.</p>
       </section>
 
-        <section class="recipe-ingredients">
-            <h2> Ingredientes:</h2>
-     <ul class="ingredients-list" id="ing-carne">
-        <li> 2 Bistecs de res (200g c/u) </li>
-        <li> 1 Cebolla grande en rodajas </li>
-        <li> 2 Dientes de ajo picados    </li>
-        <li> 2 Cucharadas de aceite de oliva </li>
-        <li> 1 Cucharada de salsa de soya (opcional)</li>
-        <li> Sal (al gusto)</li>
-        <li> Pimienta (al gusto)</li>
-     </ul>
-    <section class="recipe-steps">
+      <section id="ingredientes" class="recipe-ingredients">
+        <h2>Ingredientes</h2>
+        <ul class="ingredients-list">
+          <li>2 bistecs de res (200 g c/u)</li>
+          <li>1 cebolla grande en rodajas</li>
+          <li>2 dientes de ajo picados</li>
+          <li>2 cucharadas de aceite de oliva</li>
+          <li>1 cucharada de salsa de soya (opcional)</li>
+          <li>Sal y pimienta al gusto</li>
+        </ul>
+      </section>
+
+      <section id="preparacion" class="recipe-steps">
         <h2>Preparación</h2>
         <ol>
-        <li>Preparar la carne</li>
-        <ul>
-            <li>Lavar y secar bistecs</li>
-            <li>Sazonar con sal, pimienta y ajo picado</li>
-        </ul>
-        <li>Cocinar la cebolla</li>
-        <ul>
-            <li>En una sarten, calentar el aceite de oliva</li>
-            <li>Agregar la cebolla en rodajas y sofreir hasta que quede transparente y dorada</li>
-        </ul>
-        <li>Sellar la carne</li>
-        <ul>
-            <li>Retirar la cebolla y reservar</li>
-            <li> En la misma sarten, colocar los bistecs y cocinarlos 3-4 min por cada lado</li>
-        </ul>
-        <li> Unir todo</li>
-        <ul>
-            <li>Agregar nuevamente la cebolla al sarten</li>
-            <li> Si deseas, añadir salsa de soya</li>
-            <li> Cocinar durante 2 min</li>
-        </ul>
-        <li> Servir en caliente</li>
-        <ul> 
-            <li> Acompañar con arroz, ensalada o papas fritas</li>
-        </ul>
-     </ol> 
-</section>
+          <li>Preparar la carne</li>
+          <ul>
+            <li>Seca los bistecs y sazona con sal, pimienta y ajo picado.</li>
+          </ul>
+
+          <li>Cocinar la cebolla</li>
+          <ul>
+            <li>En una sartén, calienta el aceite de oliva.</li>
+            <li>Agrega la cebolla y sofríe hasta que esté dorada y transparente.</li>
+          </ul>
+
+          <li>Sellar la carne</li>
+          <ul>
+            <li>Retira la cebolla y resérvala.</li>
+            <li>En la misma sartén, dora los bistecs 3–4 min por lado.</li>
+          </ul>
+
+          <li>Unir todo</li>
+          <ul>
+            <li>Devuelve la cebolla a la sartén; añade soya si deseas.</li>
+            <li>Cocina 2 minutos más.</li>
+          </ul>
+
+          <li>Servir</li>
+          <ul>
+            <li>Acompaña con arroz, ensalada o papas fritas.</li>
+          </ul>
+        </ol>
+      </section>
     </article>
-        <aside class="recipe-side">
+
+    <aside class="recipe-side">
       <h3>Consejos</h3>
       <ul>
-        <li>Deja reposar la carne para que los jugos se redistribuyan.</li>
-        <li>Si la sartén está muy caliente, reduce un poco el fuego para evitar quemar la mantequilla.</li>
+        <li>Deja reposar la carne 3–5 min antes de cortar.</li>
+        <li>Si la sartén está muy caliente, baja un poco el fuego para no quemar la mantequilla.</li>
       </ul>
       <figure class="mini-figure">
-        <img src="../Img/Img_1.jpeg" alt="Guarnición">
-        <figcaption class="small">Guarnición sugerida: papas asadas</figcaption>
+        <img src="../img/Img_1.jpeg" alt="Guarnición">
+        <figcaption class="small">Guarnición sugerida: papas asadas.</figcaption>
       </figure>
     </aside>
   </main>
@@ -99,6 +113,5 @@
   </footer>
 
   <script src="../script.js"></script>
-
 </body>
 </html>
